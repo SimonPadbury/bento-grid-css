@@ -2,7 +2,7 @@
 
 A 2-dimentional 12-column CSS grid system
 bento-grid-css
-Version: 1.0
+Version: 1.1
 Size: 4kb (not zipped)
 
 Demo: https://simonpadbury.github.io/bento-grid-css/
@@ -20,7 +20,7 @@ Demo: https://simonpadbury.github.io/bento-grid-css/
 
 ## How Bento Grid Works
 
-Add the `bento` CSS class to a wrapping element (e.g. DIV), and the optional modifier `bento-dense` if you need it. This gives you _CSS grid but not defined columns_ for small devices (so that the gap still works), and a 12 column grid from `sm` 640px up.
+Add the `bento` CSS class to a wrapping element (e.g. DIV). This gives you _CSS grid but not defined columns_ for small devices (so that the gap still works), and a 12 column grid from `sm` 640px up.
 
 If you add child elements (grid items), where will simply occupy 1 grid cell. They will position themselves consecutive in columns from `sm` up, with wrapping to new rows if neessary.
 

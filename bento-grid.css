@@ -5,8 +5,6 @@
 .bento {
   display: grid;
   gap: var(--bento-gap, 1.5rem);
-}
-.bento-dense {
   grid-auto-flow: dense;
 }
 @media screen and (min-width: 640px) {
