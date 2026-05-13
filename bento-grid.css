@@ -1,0 +1,324 @@
+:root {
+  --bento-gap: 1.5rem;
+}
+
+.bento {
+  display: grid;
+  gap: var(--bento-gap, 1.5rem);
+}
+.bento-dense {
+  grid-auto-flow: dense;
+}
+@media screen and (min-width: 640px) {
+  .bento {
+    grid-template-columns: repeat(12, minmax(1rem, 1fr));
+  }
+}
+[class*="col-"] {
+  grid-column: var(--col);
+}
+[class*="row-"] {
+  grid-row: var(--row);
+}
+[class*="colspan-"] {
+  --col: auto;
+  grid-column: var(--col) / span var(--cspan);
+}
+[class*="rowspan-"] {
+  --row: auto;
+  grid-row: var(--row) / span var(--rspan);
+}
+
+@media screen and (min-width: 640px) {
+  .sm\:col-1 {
+    --col: 1;
+  }
+  .sm\:col-2 {
+    --col: 2;
+  }
+  .sm\:col-3 {
+    --col: 3;
+  }
+  .sm\:col-4 {
+    --col: 4;
+  }
+  .sm\:col-5 {
+    --col: 5;
+  }
+  .sm\:col-6 {
+    --col: 6;
+  }
+  .sm\:col-7 {
+    --col: 7;
+  }
+  .sm\:col-8 {
+    --col: 8;
+  }
+  .sm\:col-9 {
+    --col: 9;
+  }
+  .sm\:col-10 {
+    --col: 10;
+  }
+  .sm\:col-11 {
+    --col: 11;
+  }
+  .sm\:col-12 {
+    --col: 12;
+  }
+  .sm\:colspan-1 {
+    --cspan: 1;
+  }
+  .sm\:colspan-2 {
+    --cspan: 2;
+  }
+  .sm\:colspan-3 {
+    --cspan: 3;
+  }
+  .sm\:colspan-4 {
+    --cspan: 4;
+  }
+  .sm\:colspan-5 {
+    --cspan: 5;
+  }
+  .sm\:colspan-6 {
+    --cspan: 6;
+  }
+  .sm\:colspan-7 {
+    --cspan: 7;
+  }
+  .sm\:colspan-8 {
+    --cspan: 8;
+  }
+  .sm\:colspan-9 {
+    --cspan: 9;
+  }
+  .sm\:colspan-10 {
+    --cspan: 10;
+  }
+  .sm\:colspan-11 {
+    --cspan: 11;
+  }
+  .sm\:colspan-12 {
+    --cspan: 12;
+  }
+  .sm\:row-1 {
+    --row: 1;
+  }
+  .sm\:row-2 {
+    --row: 2;
+  }
+  .sm\:row-3 {
+    --row: 3;
+  }
+  .sm\:row-4 {
+    --row: 4;
+  }
+  .sm\:row-5 {
+    --row: 5;
+  }
+  .sm\:row-6 {
+    --row: 6;
+  }
+  .sm\:row-7 {
+    --row: 7;
+  }
+  .sm\:row-8 {
+    --row: 8;
+  }
+  .sm\:row-9 {
+    --row: 9;
+  }
+  .sm\:row-10 {
+    --row: 10;
+  }
+  .sm\:row-11 {
+    --row: 11;
+  }
+  .sm\:row-12 {
+    --row: 12;
+  }
+  .sm\:rowspan-1 {
+    --rspan: 1;
+  }
+  .sm\:rowspan-2 {
+    --rspan: 2;
+  }
+  .sm\:rowspan-3 {
+    --rspan: 3;
+  }
+  .sm\:rowspan-4 {
+    --rspan: 4;
+  }
+  .sm\:rowspan-5 {
+    --rspan: 5;
+  }
+  .sm\:rowspan-6 {
+    --rspan: 6;
+  }
+  .sm\:rowspan-7 {
+    --rspan: 7;
+  }
+  .sm\:rowspan-8 {
+    --rspan: 8;
+  }
+  .sm\:rowspan-9 {
+    --rspan: 9;
+  }
+  .sm\:rowspan-10 {
+    --rspan: 10;
+  }
+  .sm\:rowspan-11 {
+    --rspan: 11;
+  }
+  .sm\:rowspan-12 {
+    --rspan: 12;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .md\:col-1 {
+    --col: 1;
+  }
+  .md\:col-2 {
+    --col: 2;
+  }
+  .md\:col-3 {
+    --col: 3;
+  }
+  .md\:col-4 {
+    --col: 4;
+  }
+  .md\:col-5 {
+    --col: 5;
+  }
+  .md\:col-6 {
+    --col: 6;
+  }
+  .md\:col-7 {
+    --col: 7;
+  }
+  .md\:col-8 {
+    --col: 8;
+  }
+  .md\:col-9 {
+    --col: 9;
+  }
+  .md\:col-10 {
+    --col: 10;
+  }
+  .md\:col-11 {
+    --col: 11;
+  }
+  .md\:col-12 {
+    --col: 12;
+  }
+  .md\:colspan-1 {
+    --cspan: 1;
+  }
+  .md\:colspan-2 {
+    --cspan: 2;
+  }
+  .md\:colspan-3 {
+    --cspan: 3;
+  }
+  .md\:colspan-4 {
+    --cspan: 4;
+  }
+  .md\:colspan-5 {
+    --cspan: 5;
+  }
+  .md\:colspan-6 {
+    --cspan: 6;
+  }
+  .md\:colspan-7 {
+    --cspan: 7;
+  }
+  .md\:colspan-8 {
+    --cspan: 8;
+  }
+  .md\:colspan-9 {
+    --cspan: 9;
+  }
+  .md\:colspan-10 {
+    --cspan: 10;
+  }
+  .md\:colspan-11 {
+    --cspan: 11;
+  }
+  .md\:colspan-12 {
+    --cspan: 12;
+  }
+  .md\:row-1 {
+    --row: 1;
+  }
+  .md\:row-2 {
+    --row: 2;
+  }
+  .md\:row-3 {
+    --row: 3;
+  }
+  .md\:row-4 {
+    --row: 4;
+  }
+  .md\:row-5 {
+    --row: 5;
+  }
+  .md\:row-6 {
+    --row: 6;
+  }
+  .md\:row-7 {
+    --row: 7;
+  }
+  .md\:row-8 {
+    --row: 8;
+  }
+  .md\:row-9 {
+    --row: 9;
+  }
+  .md\:row-10 {
+    --row: 10;
+  }
+  .md\:row-11 {
+    --row: 11;
+  }
+  .md\:row-12 {
+    --row: 12;
+  }
+  .md\:rowspan-1 {
+    --rspan: 1;
+  }
+  .md\:rowspan-2 {
+    --rspan: 2;
+  }
+  .md\:rowspan-3 {
+    --rspan: 3;
+  }
+  .md\:rowspan-4 {
+    --rspan: 4;
+  }
+  .md\:rowspan-5 {
+    --rspan: 5;
+  }
+  .md\:rowspan-6 {
+    --rspan: 6;
+  }
+  .md\:rowspan-7 {
+    --rspan: 7;
+  }
+  .md\:rowspan-8 {
+    --rspan: 8;
+  }
+  .md\:rowspan-9 {
+    --rspan: 9;
+  }
+  .md\:rowspan-10 {
+    --rspan: 10;
+  }
+  .md\:rowspan-11 {
+    --rspan: 11;
+  }
+  .md\:rowspan-12 {
+    --rspan: 12;
+  }
+}

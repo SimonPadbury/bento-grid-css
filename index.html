@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bento Grid</title>
+  <link rel="stylesheet" href="/bento-grid.css">
+  <style>
+    /*
+    Basic styles for the demo. You can ignore this part, it’s not relevant to the Bento Grid itself.
+    */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+    }
+
+    .container {
+      width: min(1280px, calc(100% - 2rem));
+      margin: clamp(1rem, 2.5vw, 3rem) auto;
+    }
+
+    .bento>* {
+      border-radius: 1rem;
+      padding: 1rem;
+      background: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container">
+    <h1>Bento Grid</h1>
+  </header>
+  <main class="container">
+    <div class="bento">
+      <div class="md:col-1 md:colspan-5 md:row-1 md:rowspan-6">1 Lorem ipsum dolor sit amet.</div>
+      <div class="md:colspan-7">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cumque.</div>
+      <div class="md:col-6 md:colspan-3 md:row-2 md:rowspan-2">3 Lorem ipsum dolor sit amet.</div>
+      <div class="md:col-6 md:colspan-3 md:row-4 md:rowspan-3">4 Lorem ipsum dolor sit amet.</div>
+      <div class="md:colspan-2 md:row-2 md:rowspan-3">5 Lorem ipsum dolor sit amet.</div>
+      <div class="md:colspan-2 md:row-2 md:rowspan-3">6 Lorem ipsum dolor sit amet.</div>
+      <div class="md:col-1 md:colspan-4 md:row-7 md:rowspan-3">7 Lorem ipsum dolor sit amet.</div>
+      <div class="md:col-1 md:colspan-4 md:row-10 md:rowspan-1">8 Lorem ipsum dolor sit amet.</div>
+      <div class="md:col-5 md:colspan-2 md:row-7 md:rowspan-4">9 Lorem ipsum dolor sit amet.</div>
+      <div class="md:col-7 md:colspan-2 md:row-7 md:rowspan-1">10 Lorem ipsum dolor sit amet.</div>
+      <div class="md:col-7 md:colspan-2 md:row-8 md:rowspan-3">11 Lorem ipsum dolor sit amet.</div>
+      <div class="md:col-9 md:colspan-4 md:row-5 md:rowspan-6">12 Lorem ipsum dolor sit amet.</div>
+    </div>
+</body>
+
+</html>
