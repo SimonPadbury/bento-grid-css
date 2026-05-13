@@ -5,6 +5,8 @@ bento-grid-css
 Version: 1.0
 Size: 4kb (not zipped)
 
+Demo: https://simonpadbury.github.io/bento-grid-css/
+
 ## Features
 
 * A 12 column CSS grid, with `grid-dense` and a gap variable built in
